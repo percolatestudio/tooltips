@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'tooltips',
+  name: 'percolate:tooltips',
   summary: 'Basic qtip tooltips for Meteor',
   version: '1.0.0',
   git: 'https://github.com/percolatestudio/tooltips.git'
