@@ -53,18 +53,14 @@ Template.tooltip.rendered = function() {
 
   if (self.data) {
     if (self.data.mode === 'click') {
-      options = _.extendDotted(options, {
-        'show.event': 'click',
-        'hide.event': 'unfocus',
-        'hide.delay': 0
-      });
+      options.show.event = 'click';
+      options.hide.event = 'unfocus';
+      options.hide.delay = 0;
     }
     if (self.data.mode === 'toggle') {
-      options = _.extendDotted(options, {
-        'show.event': 'click',
-        'hide.event': 'click unfocus',
-        'hide.delay': 0
-      });
+      options.show.event = 'click';
+      options.hide.event = 'click unfocus';
+      options.hide.delay = 0;
     }
     delete self.data.mode;
   }
